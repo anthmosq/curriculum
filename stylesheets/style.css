@@ -1,7 +1,7 @@
 * {
 
     /* Familia de fuentes */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Times New Roman", Times, serif;
 
 }
 
@@ -45,19 +45,12 @@ footer p {
 
 }
 
-nav > ul {
-
-    /* Eliminar los estilos de lista predeterminados */
-    list-style: none;
-
-}
-
 .map-container {
     max-width: 600px;
     margin: 0 auto;
 }
 
-.map-container iframe {
+.map-container ifram {
     width: 100%;
     min-height: 350px;
     border: 0;
@@ -85,7 +78,10 @@ section {
    box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
 }
 
-nav ul {
+nav > ul {
+    
+    list-style: none;
+    
     /*Activa el modelo de diseño Flexbox en el elemento*/
     display: flex;
 
@@ -144,4 +140,27 @@ section form{
      /* Distribuye equitativamente los artículos en tres columnas */
      flex: 1 1 calc(33.333% - 1rem);
 
+}
+
+/* Estilos para el formulario */
+
+form label {
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    padding: 0.7rem 1rem;
+    cursor: pointer;
 }
